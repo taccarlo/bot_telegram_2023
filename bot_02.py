@@ -20,7 +20,6 @@ async def goodmorning(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    update.effective_user.language_code
     message = getMessage(update, "ciao") 
     await update.message.reply_text(message)
 
